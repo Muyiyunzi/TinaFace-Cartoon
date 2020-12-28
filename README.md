@@ -42,7 +42,7 @@ conda create -n vedadet python=3.8.5 -y
 conda activate vedadet
 ```
 
-可能的debug方案：sudo chown -R username anaconda3（cd到anaconda安装命令下）
+可能的debug方案：```sudo chown -R username anaconda3（cd到anaconda安装命令下）```
 
 c. 通过[官方建议](https://pytorch.org/)命令安装pytorch，比如：
 
@@ -75,7 +75,7 @@ bash annotrans.sh
 
 或打开annotrans.sh文件手动输入其中命令。
 
-可能的debug方案: sudo chown 777 ./xxx.sh
+可能的debug方案: ```sudo chown 777 ./xxx.sh```
 
 h. 生成训练文件名
 ```shell
@@ -110,3 +110,4 @@ bash infer_novisual.sh
 bash infer_single.sh
 ```
 
+TODO：evaluate not available

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 
 import cv2
@@ -10,13 +12,13 @@ from vedacore.parallel import collate, scatter
 from vedadet.datasets.pipelines import Compose
 from vedadet.engines import build_engine
 
-filename = "cartoon_gt.txt"
+filename = "convertanno/cartoon_gt.txt"
 fo = open(filename, "w")
-for i in range(42500):
+for i in range(4999):
     STR = "images/" + str(i) + ".jpg" + "\n"
     fo.write(STR)
 
-    STR = "annotations/" + str(i) + ".txt"
+    STR = "convertanno/annotations/" + str(i) + ".txt"
     fi = open(STR, "r")
 
     lines = str(len(fi.readlines())) + "\n"
