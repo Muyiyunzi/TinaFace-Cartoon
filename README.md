@@ -35,14 +35,14 @@ a. 将git克隆到本地
 git clone https://github.com/Muyiyunzi/TinaFace-Cartoon.git
 ```
 
-b. 创建一个便于管理的conda环境（需要预先安装anaconda） , *e.g.*,
+b. 创建一个便于管理的conda环境（需要预先安装anaconda），如命名为vedadet
 
 ```shell
 conda create -n vedadet python=3.8.5 -y
 conda activate vedadet
 ```
 
-可能的debug方案：```sudo chown -R username anaconda3（cd到anaconda安装命令下）```
+可能的debug方案：```sudo chown -R username anaconda3```（cd到anaconda安装命令下）
 
 c. 通过[官方建议](https://pytorch.org/)命令安装pytorch，比如：
 
